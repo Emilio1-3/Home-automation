@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HomeTech</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="navigation">
+			<h1>HomeTech</h1>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#help">Help</a></li>
+				<li><a href="#about">About</a></li>
+			</ul>
+		</header>
+		<section id="home">
+			<div class="content">
+				<h2>Welcome Home</h2>
+				<p>
+					Take charge of your home from the comfort of your phone. Living made
+					simpler.
+				</p>
+				<div class="controls-container">
+					<div class="control-card" data-device="kitchen-lights">
+						<div class="card-top">
+							<span class="icon-container">
+								<ion-icon name="bulb" id="kitchen-light-icon"></ion-icon>
+							</span>
+							<div>
+								<h4>Kitchen Lights</h4>
+								<p id="status-kitchen-lights"></p>
+							</div>
+						</div>
+						<label class="switch">
+							<input
+								type="checkbox"
+								data-device="kitchen-lights"
+								onchange="updateDevice(this)" />
+							<span class="slider round"></span>
+						</label>
+					</div>
+					<div class="control-card" data-device="garage">
+						<div class="card-top">
+							<span class="icon-container">
+								<img src="smart-garage.png" id="garage-icon" alt="Garage" />
+							</span>
+							<div>
+								<h4>Garage</h4>
+								<p id="status-garage"></p>
+							</div>
+						</div>
+						<label class="switch">
+							<input
+								type="checkbox"
+								data-device="garage"
+								onchange="updateDevice(this)" />
+							<span class="slider round"></span>
+						</label>
+					</div>
+					<div class="control-card" data-device="ac">
+						<div class="card-top">
+							<span class="icon-container">
+								<ion-icon name="thermometer-outline" id="ac-icon"></ion-icon>
+							</span>
+							<div>
+								<h4>Air conditioner</h4>
+								<p id="status-ac"></p>
+							</div>
+						</div>
+						<label class="switch">
+							<input
+								type="checkbox"
+								data-device="ac"
+								onchange="updateDevice(this)" />
+							<span class="slider round"></span>
+						</label>
+					</div>
+					<!-- Add more devices as needed -->
+				</div>
+			</div>
+		</section>
+		<ion-icon name="bulb" size="large" id="bulb-svg" hidden></ion-icon>
+		<script src="script.js" defer></script>
+	</body>
+</html>
