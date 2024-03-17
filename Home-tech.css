@@ -1,5 +1,5 @@
 :root{
-  --color-primary: #a91efa;
+  --color-primary: #1e5afa;
   --color-primary-variant: rgba(0, 0, 240, 0.2);
   --color-white: #fff;
   --color-light: #f4f4f4;
@@ -11,7 +11,7 @@
 
   --transition: all 400ms ease;
   
-  ---container-width: 84%;
+  --container-width: 84%;
   --container-width-tablet: 90%;
   --container-width-phone: 94%;
 }
@@ -106,10 +106,11 @@ img{
     place-items: center;
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 2;
     background: var(--color-primary);
   }
-  .nav_container {
+  .nav_container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,5 +130,9 @@ nav button{
 }
 .nav_sigin-signup{
   display: flex;
-
+  align-items: center;
+  gap: 3rem;
+}
+.nav_logo h3{
+  font-size: 1.7rem;
 }
