@@ -1,4 +1,4 @@
-// The only changes made to this file is naming the function that closes the Nav Items. And I did that so we could re-execute it on click of the nav links to close the nav menu
+
 
 
 
